@@ -17,8 +17,8 @@
 }
 
 - (BOOL) foundSQL : (NSString *)key;
-- (int) rndmNumber;
-- (NSString *) foundSQLid;
+- (int) rndmNumber:(int)max;
+- (NSString *) foundSQLid:(int) rnd;
 - (int)howMuchWords;
 
 @end

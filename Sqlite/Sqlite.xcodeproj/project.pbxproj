@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		19E74FBB161DAFE5009193EF /* sqlFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E74FBA161DAFE5009193EF /* sqlFound.m */; };
+		19E74FC6161DC23C009193EF /* ok.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 19E74FC4161DC23C009193EF /* ok.jpeg */; };
+		19E74FC7161DC23C009193EF /* cancel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 19E74FC5161DC23C009193EF /* cancel.jpeg */; };
+		19E74FCD161DC4DA009193EF /* Main.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 19E74FCC161DC4DA009193EF /* Main.sqlite */; };
 		4BA852FB16143F8A001ED373 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA852FA16143F8A001ED373 /* UIKit.framework */; };
 		4BA852FD16143F8A001ED373 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA852FC16143F8A001ED373 /* Foundation.framework */; };
 		4BA852FF16143F8A001ED373 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA852FE16143F8A001ED373 /* CoreGraphics.framework */; };
@@ -18,12 +21,14 @@
 		4BA8531116143F8A001ED373 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8530F16143F8A001ED373 /* ViewController.xib */; };
 		4BA8531A1614408F001ED373 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA853191614408F001ED373 /* libsqlite3.dylib */; };
 		4BA8531C16144A74001ED373 /* TDK.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8531B16144A74001ED373 /* TDK.sqlite */; };
-		4BA8532216149D49001ED373 /* Main.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8532116149D49001ED373 /* Main.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19E74FBA161DAFE5009193EF /* sqlFound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sqlFound.m; sourceTree = "<group>"; };
 		19E74FBD161DAFF0009193EF /* sqlFound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sqlFound.h; sourceTree = "<group>"; };
+		19E74FC4161DC23C009193EF /* ok.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ok.jpeg; sourceTree = "<group>"; };
+		19E74FC5161DC23C009193EF /* cancel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cancel.jpeg; sourceTree = "<group>"; };
+		19E74FCC161DC4DA009193EF /* Main.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.sqlite; sourceTree = "<group>"; };
 		4BA852F616143F8A001ED373 /* Sqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA852FA16143F8A001ED373 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BA852FC16143F8A001ED373 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,7 +44,6 @@
 		4BA8531016143F8A001ED373 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		4BA853191614408F001ED373 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4BA8531B16144A74001ED373 /* TDK.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TDK.sqlite; sourceTree = "<group>"; };
-		4BA8532116149D49001ED373 /* Main.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E74FC2161DC22C009193EF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				19E74FC4161DC23C009193EF /* ok.jpeg */,
+				19E74FC5161DC23C009193EF /* cancel.jpeg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		4BA852EB16143F8A001ED373 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +101,8 @@
 		4BA8530016143F8A001ED373 /* Sqlite */ = {
 			isa = PBXGroup;
 			children = (
-				4BA8532116149D49001ED373 /* Main.sqlite */,
+				19E74FC2161DC22C009193EF /* images */,
+				19E74FCC161DC4DA009193EF /* Main.sqlite */,
 				4BA8531B16144A74001ED373 /* TDK.sqlite */,
 				19E74FBD161DAFF0009193EF /* sqlFound.h */,
 				19E74FBA161DAFE5009193EF /* sqlFound.m */,
@@ -167,7 +181,9 @@
 				4BA8530516143F8A001ED373 /* InfoPlist.strings in Resources */,
 				4BA8531116143F8A001ED373 /* ViewController.xib in Resources */,
 				4BA8531C16144A74001ED373 /* TDK.sqlite in Resources */,
-				4BA8532216149D49001ED373 /* Main.sqlite in Resources */,
+				19E74FC6161DC23C009193EF /* ok.jpeg in Resources */,
+				19E74FC7161DC23C009193EF /* cancel.jpeg in Resources */,
+				19E74FCD161DC4DA009193EF /* Main.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,7 @@
 
 @interface ViewController : UIViewController
 {
+    int maxSQL;
     sqlFound * test;
 }
 

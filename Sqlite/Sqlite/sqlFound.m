@@ -10,6 +10,8 @@
 
 @implementation sqlFound
 
+
+
 //girilen kelimeyi veritabanında sorgulayıp true-false donduren method
 - (BOOL) foundSQL : (NSString *)key
 {
@@ -42,21 +44,21 @@
 }
 
 //veritanındaki veri sayısına gore random (rasgele) sayı üreten method
-- (int) rndmNumber
+- (int) rndmNumber:(int)max
 {
-    int r = arc4random() % [self howMuchWords];
+    int r = arc4random() % max;
     return r;
 }
 
 //id sine gore veritabanından veriyi bulup getiren method
-- (NSString *) foundSQLid
+- (NSString *) foundSQLid:(int) rnd
 {
     NSString * strng = [[NSString stringWithFormat:@""]init];
     dbYolu = [NSString stringWithFormat:@"%@/Documents/Main.sqlite",NSHomeDirectory()];
 
     if (sqlite3_open([dbYolu UTF8String], &db) == SQLITE_OK)
     {
-        NSString* query = [NSString stringWithFormat: @"SELECT name FROM vocalist where id = '%i'",[self rndmNumber]];
+        NSString* query = [NSString stringWithFormat: @"SELECT name FROM vocalist where id = '%i'",rnd];
         sqlite3_stmt* stmt;
         if (sqlite3_prepare_v2(db, [query UTF8String], -1, &stmt, nil) == SQLITE_OK)
         {

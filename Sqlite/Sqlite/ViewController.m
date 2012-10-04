@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 
+
 @end
 
 @implementation ViewController
@@ -66,6 +67,10 @@
      
      */
     
+    
+    test = [[sqlFound alloc]init];
+    maxSQL = [test howMuchWords];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -88,14 +93,14 @@
     UIImage *imgOk = [UIImage imageNamed:@"ok.jpeg"];
     UIImage *imgCancel = [UIImage imageNamed:@"cancel.jpeg"];
     
-    test = [[sqlFound alloc]init];
+    
     
     if (![txtEnter.text isEqualToString:@""]) {
         [test foundSQL:txtEnter.text] ? [self.imageView setImage:imgOk] : [self.imageView setImage:imgCancel] ;
         
     }
     
-    rndmText.text = [test foundSQLid];
+    rndmText.text = [test foundSQLid:[test rndmNumber:maxSQL]];
     
     [txtEnter resignFirstResponder];
     
