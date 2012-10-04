@@ -8,13 +8,19 @@
 
 
 //HOBAAAAAAAAAAÂA111ÂA1Â
-//osman
-//
 
 
 #import <UIKit/UIKit.h>
+#import "sqlFound.h"
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *txtField;
+{
+    sqlFound * test;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *txtEnter;
+- (IBAction)sorgu:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *rndmText;
 
 @end

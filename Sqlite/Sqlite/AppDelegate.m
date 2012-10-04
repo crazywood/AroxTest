@@ -20,10 +20,10 @@
 {
     
     NSString * pathWay = [[NSBundle mainBundle]pathForResource:@"Main" ofType:@"sqlite"];
-    NSArray* ways = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
-    NSString* documentsYolu = [ways objectAtIndex:0]; 
+    NSArray* ways = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* documentsYolu = [ways objectAtIndex:0];
     NSString* dataPath = [documentsYolu stringByAppendingPathComponent:@"Main.sqlite"];
-
+    
     NSError* err;
     if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath]) // Dosya orada zaten var mi kontrol et
     {
@@ -35,7 +35,7 @@
     }
     
     
-
+    
 }
 
 
@@ -60,7 +60,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
