@@ -43,7 +43,7 @@
     return control;
 }
 
-//veritanındaki veri sayısına gore random (rasgele) sayı üreten method
+//veritanındaki veri sayısına gore random (rastgele) sayı üreten method
 - (int) rndmNumber:(int)max
 {
     int r = arc4random() % max;
@@ -65,6 +65,7 @@
             while (sqlite3_step(stmt) == SQLITE_ROW)
             {
                 NSString* words = [NSString stringWithUTF8String:(char*)sqlite3_column_text(stmt, 0)];
+                //(stmt,0) sıfır burada dönen sorgunun ilk kolonuna işaret eder.
                 strng = words;
                 
             }
@@ -91,8 +92,9 @@
         {
             while (sqlite3_step(stmt) == SQLITE_ROW)
             {
-                NSString* words = [NSString stringWithUTF8String:(char*)sqlite3_column_text(stmt, 0)];
-                a = words.intValue;
+                //NSString* words = [NSString stringWithUTF8String:(char*)sqlite3_column_text(stmt, 0)];
+                a = sqlite3_column_int(stmt, 0);
+                //words.intValue;
             }
         }
         sqlite3_finalize(stmt);
@@ -103,6 +105,16 @@
     }
     return a;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @end

@@ -98,6 +98,8 @@
     if (![txtEnter.text isEqualToString:@""]) {
         [test foundSQL:txtEnter.text] ? [self.imageView setImage:imgOk] : [self.imageView setImage:imgCancel] ;
         
+        //condition ? boooo : fooooo;
+        
     }
     
     rndmText.text = [test foundSQLid:[test rndmNumber:maxSQL]];
@@ -106,4 +108,24 @@
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end
