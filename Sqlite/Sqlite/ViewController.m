@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 //Terörkan
+//Master değişiklik
 
 @end
 
