@@ -12,8 +12,8 @@
 @interface ViewController ()
 
 //Terörkan
-//test değişiklik
 //Master değişiklik
+//test değişiklik
 
 @end
 
